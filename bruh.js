@@ -1,18 +1,23 @@
-
-let playerSelection = prompt();
-playerSelection = playerSelection.toLowerCase();
 let playerScore = 0
 let computerScore = 0
+
+function playerPlay() {
+    let playerSelection = prompt();
+    playerSelection = playerSelection.toLowerCase();
+    return playerSelection;
+}
+
 
 function computerPlay() {
     const selection = ["rock", "paper", "scissors"];
     const computerSelection = selection[Math.floor(Math.random() * selection.length)];
-    return computerSelection
+    return computerSelection;
 }
 
 
 function round() {
-    let computerSelection = computerPlay()
+    let playerSelection = playerPlay();
+    let computerSelection = computerPlay();
     console.log("You:" + playerSelection + " vs " + "Bot:" + computerSelection);
 
     if (playerSelection === "rock" && computerSelection === "scissors") {
@@ -34,7 +39,7 @@ function round() {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        round()
+        round(i)
      }
      console.log(playerScore, computerScore);
      if (playerScore > computerScore) {
