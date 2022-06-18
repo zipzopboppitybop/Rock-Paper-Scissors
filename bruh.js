@@ -7,7 +7,6 @@ function playerPlay() {
     return playerSelection;
 }
 
-
 function computerPlay() {
     const selection = ["rock", "paper", "scissors"];
     const computerSelection = selection[Math.floor(Math.random() * selection.length)];
