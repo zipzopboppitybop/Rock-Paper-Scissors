@@ -9,7 +9,8 @@ function game() {
 const playerPick = "rock";
 const computer =  computerPlay();
 
-function computerPlay() {
 
+function computerPlay() {
+    console.log("rock")
 }
 console.log(playerPick + computer)
