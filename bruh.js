@@ -23,6 +23,7 @@ function round() {
     if (playerSelection === "rock" && computerSelection === "scissors") {
         console.log("You Won this round!");
         playerScore ++;
+        
     } else if (playerSelection === "paper" && computerSelection === "rock") {
         console.log("You Won this round!");
         playerScore ++;
@@ -40,13 +41,14 @@ function round() {
 function game() {
     for (let i = 0; i < 5; i++) {
         round(i)
-     }
-     console.log(playerScore, computerScore);
-     if (playerScore > computerScore) {
+        console.log("You: " + playerScore + " Bot: " + computerScore);
+    }
+    console.log(playerScore, computerScore);
+    if (playerScore > computerScore) {
         console.log("You Win!");
-     } else if (playerScore < computerScore) {
+    } else if (playerScore < computerScore) {
         console.log("You Lose!");
-     }
+    }
 }
 
 game()
