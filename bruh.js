@@ -4,6 +4,7 @@ let playerSelection = prompt();
 playerSelection = playerSelection.toLowerCase();
 const computer = computerPlay();
 
+
 function computerPlay() {
     return computerSelection
 }
@@ -26,5 +27,10 @@ function round() {
 
 }  
 
-round()
+function game() {
+    for (let i = 0; i < 5; i++) {
+        round()
+     }
+}
 
+game()
