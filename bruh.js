@@ -2,7 +2,7 @@ let playerScore = 0
 let computerScore = 0
 
 function playerPlay() {
-    let playerSelection = prompt();
+    let playerSelection = prompt("Type rock, paper, or scissors.");
     playerSelection = playerSelection.toLowerCase();
     return playerSelection;
 }
@@ -12,7 +12,6 @@ function computerPlay() {
     const computerSelection = selection[Math.floor(Math.random() * selection.length)];
     return computerSelection;
 }
-
 
 function round() {
     let playerSelection = playerPlay();
@@ -30,7 +29,7 @@ function round() {
         console.log("You Won this round!");
         playerScore ++;
     } else if (playerSelection === computerSelection) {
-        console.log("Draw");
+        console.log("Draw!");
     } else {
         console.log("You Lost this round!");
         computerScore ++;
@@ -40,7 +39,7 @@ function round() {
 function game() {
     for (let i = 0; i < 5; i++) {
         round(i)
-        console.log("You: " + playerScore + " Bot: " + computerScore);
+        console.log("You:" + playerScore + " Bot:" + computerScore);
     }
     console.log(playerScore, computerScore);
     if (playerScore > computerScore) {
@@ -48,8 +47,9 @@ function game() {
     } else if (playerScore < computerScore) {
         console.log("You Lose!");
     } else {
-        console.log("Draw");
+        console.log("Draw!");
     }
 }
+
 
 game()
