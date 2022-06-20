@@ -37,10 +37,7 @@ function round() {
 }  
 
 function game() {
-    for (let i = 0; i < 5; i++) {
-        round(i)
-        console.log("You:" + playerScore + " Bot:" + computerScore);
-    }
+    
     console.log(playerScore, computerScore);
     if (playerScore > computerScore) {
         console.log("You Win!");
@@ -51,4 +48,3 @@ function game() {
     }
 }
 
-game()
