@@ -5,19 +5,18 @@ div {
 
 button {
     width: 200px;
-    height: 200px;
+    height: 134px;
     margin: 20px;
 }
 
 #rockBtn {
-    background: url(./imgs/rock.jpg);
-
+    background:  url(./imgs/rock.jpg);
 }
 
 #paperBtn {
-    
+    background: url(./imgs/paper.jpg);
 }
 
 #scissorsBtn {
-    
+    background: url(./imgs/scissors.jpg);
 }
