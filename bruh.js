@@ -1,6 +1,20 @@
 let playerScore = 0
 let computerScore = 0
 
+const rock = document.getElementById("rockBtn");
+const paper = document.getElementById("paperBtn");
+const scissors = document.getElementById("scissorsBtn");
+
+rock.addEventListener("click", function() {
+    console.log("rock");
+})
+paper.addEventListener("click", function() {
+    console.log("paper");
+})
+scissors.addEventListener("click", function() {
+    console.log("scissors");
+})
+
 function playerPlay() {
     let playerSelection = prompt("Type rock, paper, or scissors.");
     playerSelection = playerSelection.toLowerCase();
