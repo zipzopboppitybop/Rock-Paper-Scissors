@@ -1,4 +1,20 @@
-div {
+body {
+    background: gray;
+    position: relative;
+}
+
+span{
+    position: relative;
+    font-size: 40px;
+    margin: 80px;
+    top: 350px;
+
+}
+
+#score {
+    text-align: center;
+}
+#buttons {
     margin-top: 20%;
     text-align: center;
 }
@@ -7,6 +23,7 @@ button {
     width: 200px;
     height: 134px;
     margin: 20px;
+    border: none;
 }
 
 #rockBtn {
