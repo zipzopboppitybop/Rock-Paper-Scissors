@@ -42,19 +42,13 @@ function round() {
     bot.textContent = "Bot: " + computerSelection;
 
     if (playerSelection === "Rock" && computerSelection === "Scissors") {
-        console.log("You Won this round!");
         playerScore ++;
-        
     } else if (playerSelection === "Paper" && computerSelection === "Rock") {
-        console.log("You Won this round!");
         playerScore ++;
     } else if (playerSelection === "Scissors" && computerSelection === "Paper") {
-        console.log("You Won this round!");
         playerScore ++;
     } else if (playerSelection === computerSelection) {
-        console.log("Draw!");
     } else {
-        console.log("You Lost this round!");
         computerScore ++;
     }
 }  
