@@ -59,7 +59,13 @@ function game() {
 
     if (playerScore === 5) {
         scoreboard.textContent = "You Win!";
+        rock.disabled = true
+        paper.disabled = true
+        scissors.disabled = true
     } else if ( computerScore === 5) {
         scoreboard.textContent = "You Lose!";
+        rock.disabled = true
+        paper.disabled = true
+        scissors.disabled = true
     }
 }
