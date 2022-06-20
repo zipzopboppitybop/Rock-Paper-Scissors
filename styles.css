@@ -8,3 +8,16 @@ button {
     height: 200px;
     margin: 20px;
 }
+
+#rockBtn {
+    background: url(./imgs/rock.jpg);
+
+}
+
+#paperBtn {
+    
+}
+
+#scissorsBtn {
+    
+}
