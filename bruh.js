@@ -6,18 +6,19 @@ const paper = document.getElementById("paperBtn");
 const scissors = document.getElementById("scissorsBtn");
 
 rock.addEventListener("click", function() {
-    console.log("rock");
+    playerSelection = "rock"
+    round()
 })
 paper.addEventListener("click", function() {
-    console.log("paper");
+    playerSelection = "paper"
+    round()
 })
 scissors.addEventListener("click", function() {
-    console.log("scissors");
+    playerSelection = "scissors"
+    round()
 })
 
 function playerPlay() {
-    let playerSelection = prompt("Type rock, paper, or scissors.");
-    playerSelection = playerSelection.toLowerCase();
     return playerSelection;
 }
 
